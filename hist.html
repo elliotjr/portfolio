@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ER > History Chains</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="hwrap"
+        <div class="imgt">
+          <div class="bgimg3"></div>
+          <div class="overlay"></div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html", class="white"><span class="fa fa-home"></span> Portfolio</a></li><li>
+            <a href="experience.html", class="white"><span class="fa fa-location-arrow"></span> Experience</a></li><li>
+            <a href="aboutme.html", class="white"><span class="fa fa-users"></span> About</a></li>
+          </ul>
+        </nav>
+
+
+
+        <div class="logo">
+          <h1 class="clip">History Chains</h1>
+        </div>
+      </div>
+
+      <div class="bottomnav">
+        <ul>
+          <li class="white"><p>Who</p></li>
+          <li class="white1"><p>What</p></li>
+        </ul>
+      </div>
+
+    </div>
+
+      <div class="part">
+        <div class="research">
+        <h1 class='h'>Who made it?</h1>
+        <p>History Chains was made by a team of 5 undergraduate students at the University of Queensland.
+        As an ambitious project, the team worked together to create an application that sourced information from Trove.
+        This was assesment for DECO1800</p>
+
+
+        <img class="i1" src="images/hist.png" alt="History Chain Screen Shot">
+        <img class="i2" src="images/hist1.png" alt="History Chain Screen Shot">
+        <div style="clear: both;"></div>
+
+      </div>
+        <div class="design1">
+          <h1 class='h'>What is History Chains?</h1>
+          <p>Most children these days are consumed by technology and falter when given
+            errands of an on-going research task and collaboration in the classroom. Using a
+            combination of technology and education, we have deliberated a concept which creates a medium between the
+            user and the application that allows them to form a working 'Study Chain' that controls, shapes, and technologically
+            inscribes their work in a technological form. Our concepts name is 'History Chains'. A versatile, educational and instructive
+            application that uses Trove's Search Portal as a medium for data retrieval. The overall idea behind 'History Chains' is to
+            encourage Children in primary school to emerge themselves in historical sources in Trove. We are closely working with articles
+            related to Modern Australian History, a major subject in primary school with sources scattered all over Trove.
+            Allowing the Children to manipulate this data, 'History Chains' will prove to be a pivotal study instrument in
+            classroom collaboration and student research. </p>
+
+
+          <img class="i1" src="images/hist2.png" alt="History Chains Screen Shot">
+          <img class="i2" src="images/hist3.png" alt="History Chain Screen Shot">
+          <div style="clear: both;"></div>
+
+        </div>
+
+        <p class="nav2"> <a href="part1.html">Major Project A</a> | <a href="part2.html">Major Project B</a> |
+           <a href="part3.html">Major Project C</a> | <a href="portfolio.html">Portfolio</a> |
+            <a href="reflection.html">Reflection</a>
+        </p>
+
+      </div>
+      <footer>
+        <p>Thank you for visiting | Designed By Elliot Randall | All Rights Reserved | <strong>Best Viewed in Chrome and Safari<strong></p>
+      </footer>
+
+
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+  $(window).scroll(function() {
+
+      if ($(this).scrollTop()>500)
+       {
+          $('nav').fadeOut();
+       }
+      else
+       {
+        $('nav').fadeIn();
+       }
+   });
+
+  $(document).ready(function(){
+    $('.bottomnav').fadeIn(1000);
+    $('.design1').hide();
+    $('.reflection').hide();
+
+    $('.white').click(function(){
+      $('.research').fadeIn(1000);
+      $('.design1').fadeOut(500);
+      $('.reflection').fadeOut(500);
+    });
+
+    $('.white1').click(function(){
+      $('.design1').fadeIn(1000);
+      $('.research').hide();
+      $('.reflection').hide();
+    });
+
+    $('.white2').click(function(){
+      $('.reflection').fadeIn(1000);
+      $('.research').hide();
+      $('.design1').hide();
+    });
+
+  });
+
+</script>
+
+  </body>
+
+</html>
